@@ -34,4 +34,3 @@ function OnTick()
 		end
 	end
 end
-
