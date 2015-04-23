@@ -30,7 +30,7 @@ function OnTick()
 			local CastPosition,  HitChance,  Position = VP:GetLineCastPosition(target, 0.25, 75, 925, 1800, myHero, true)
 			if HitChance >= 2 then
 				CastSpell(_Q, CastPosition.x, CastPosition.z)
-				if myHero:CanUseSpell(_E) == READY and ValidTarget(target, E_Range) then CastSpell(_E) end
+				if myHero:CanUseSpell(_E) == READY and ValidTarget(target, 125) then CastSpell(_E) end
 			end
 		end
 	end
